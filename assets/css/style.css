@@ -77,8 +77,8 @@
     height: 150px;
     border-radius: 50%;
     border: 3px solid transparent;
-    -webkit-animation: rotate 8s linear infinite;
-    animation: rotate 8s linear infinite;
+    -webkit-animation: rotate 4s linear infinite;
+    animation: rotate 4s linear infinite;
 }
 
 /* -------------BackToTop-------------- */
@@ -130,6 +130,33 @@
     width: 460px;
 }
 
+.dropdown {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.dropdown-menu {
+    background-color: var(--white-color) !important;
+    border-color: white !important;
+    min-width: unset !important;
+    border: none !important;
+    margin-top: 8px !important;
+    color: #ffa640 !important;
+    border-radius: 15px !important;
+    position: absolute;
+    padding: 5px !important;
+    transition: all linear 0.3s;
+}
+
+.dropdown-item {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--orange-color) !important;
+
+}
+
 /* ----------------header------------------ */
 .bg_linear {
     background: linear-gradient(180deg, #FFBA3B -9.01%, #FFA53B 43.37%, #FF983B 89.55%);
@@ -143,8 +170,26 @@
 }
 
 .header_img {
-    -webkit-animation: popup 5s infinite linear;
-    animation: popup 5s linear infinite;
+    -webkit-animation: popupdown 4s infinite linear;
+    animation: popupdown 4s linear infinite;
+}
+
+@-webkit-keyframes popupdown {
+
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(6%);
+        transform: translateY(6%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 .header_btn_arrow {
@@ -523,6 +568,7 @@ img.white_left_img,
 .roadmap {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .roadmap::before {
@@ -562,12 +608,13 @@ img.white_left_img,
 
 #countdown-container div div {
     margin: 0 10px;
-    font-size: var(--fs-xl);
-    color: var(--white-color);
+    font-size: var(--fs-xl) !important;
+    color: var(--white-color) !important;
     background-color: transparent;
     padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid var(--white-color);
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    border: 1px solid var(--white-color) !important;
 }
 
 .buy_btn {
@@ -628,6 +675,30 @@ img.white_left_img,
     position: absolute;
     top: 35%;
     right: -15%;
+}
+
+.box_1 {
+    background: #D4356F;
+}
+
+.box_2 {
+    background: #8CC63F;
+}
+
+.box_3 {
+    background: #77C4D3;
+}
+
+.box_4 {
+    background: #FDA036;
+}
+
+.box_1,
+.box_2,
+.box_3,
+.box_4 {
+    height: 30px;
+    width: 30px;
 }
 
 /* ------------platforms-------------- */
@@ -721,6 +792,26 @@ ul {
     .section_bg {
         background: #FF983B;
     }
+
+    .team_position {
+        top: 20%;
+        left: 1%;
+    }
+
+    .founder_position {
+        top: 58%;
+        left: -42%;
+    }
+
+    .worker_position {
+        bottom: -5%;
+        left: 15%;
+    }
+
+    .holder_position {
+        right: -40%;
+
+    }
 }
 
 @media (max-width:992px) {
@@ -770,7 +861,6 @@ ul {
         opacity: 1;
         pointer-events: all;
         left: 0;
-        overflow: hidden;
     }
 
     .top-52 {
@@ -809,31 +899,6 @@ ul {
     .roadmap_right {
         display: none;
     }
-
-    .tokenomics_img {
-        width: 100%;
-    }
-
-    .team_position {
-        top: 20%;
-        left: 1%;
-    }
-
-    .founder_position {
-        top: 58%;
-        left: -42%;
-    }
-
-    .worker_position {
-        bottom: -5%;
-        left: 15%;
-    }
-
-    .holder_position {
-        right: -40%;
-
-    }
-
 }
 
 @media (max-width:576px) {
@@ -851,29 +916,6 @@ ul {
         display: none;
     }
 
-    .team_position {
-        left: 0%;
-        font-size: 10px !important;
-    }
-
-    .founder_position {
-        top: 58%;
-        left: -42%;
-        font-size: 10px !important;
-    }
-
-    .worker_position {
-        bottom: -6%;
-        left: 20%;
-        font-size: 10px !important;
-    }
-
-    .holder_position {
-        right: -35%;
-        font-size: 10px !important;
-
-    }
-
     #scroll {
         width: 35px;
         height: 35px;
@@ -888,5 +930,11 @@ ul {
     .preloader_logo {
         width: 80px;
         height: 80px;
+    }
+}
+
+@media (max-width:480px) {
+    .max_width_250 {
+        max-width: 250px;
     }
 }
