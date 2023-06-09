@@ -13,6 +13,7 @@ $('.bubble_slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
+        dots: true,
       }
     },
     {
@@ -22,6 +23,7 @@ $('.bubble_slider').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '60px',
+        dots: true,
       }
     },
     {

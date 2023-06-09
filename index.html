@@ -27,61 +27,68 @@
   <div class="overflow-hidden">
     <header class="bg_linear min-vh-100 d-flex flex-column position-relative">
       <img src="./assets/image/png/header_top_left_img.png" alt="header_top_left_img" class="header_top_left_img">
-      <nav class="navbar navbar-expand-lg container">
-        <a class="navbar-brand" href="#"><img src="./assets/image/png/web_logo.png" alt="web_logo" class="w_180"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 align-items-center gap-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">ICO
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WHITEPAPER
-              </a>
-            </li>
-            <li>
-              <a class="nav-link icon_zoom" href="#"><img src="./assets/image/svg/nav_discord.svg" alt="nav_discord">
-              </a>
-            </li>
-            <li>
-              <a class="nav-link icon_zoom" href="#"><img src="./assets/image/svg/nav_twitter.svg" alt="nav_twitter">
-              </a>
-            </li>
-            <li>
-              <a class="nav-link icon_zoom" href="#"><img src="./assets/image/svg/nav_telegram.svg" alt="nav_telegram">
-              </a>
-            </li>
-            <li>
-              <a class="nav-link icon_zoom" href="#"><img src="./assets/image/svg/in_img.svg" alt="in_img">
-              </a>
-            </li>
-            <li class="dropdown">
-              <a class="ff_Montserrat fw-normal fs_sm text-white dropdown-toggle" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/image/svg/earth_icon.svg"
-                  alt="earth_icon">
-                Eng
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">HINDI</a></li>
-                <li><a class="dropdown-item" href="#">SPANISH</a></li>
-              </ul>
-            </li>
-          </ul>
+      <nav class="pt-4 ">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="" class="z-1">
+                    <img src="./assets/image/png/web_logo.png" alt="web_logo" class="w_180">
+                </a>
+                <label for="menuIcon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="menuIcon" hidden class="d-none">
+                <ul class="d-flex align-items-center sm-screen mb-0 gap-3 ps-0">
+                    <li class="me-3 under_line">
+                        <a href="" class="text-white ff_Montserrat fw-semibold fs_sm">ICO
+                        </a>
+                    </li>
+                    <li class="me-3 under_line">
+                        <a href="" class="text-white ff_Montserrat fw-semibold fs_sm">WHITEPAPER
+                        </a>
+                    </li>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <li class="me-3 icon_zoom"><a href="https://www.discord.com" target="_blank">
+                                <img src="./assets/image/svg/nav_discord.svg" alt="discord">
+                            </a></li>
+                        <li class="me-3 icon_zoom"><a href="https://www.twitter.com" target="_blank">
+                                <img src="./assets/image/svg/nav_twitter.svg" alt="twitter">
+                            </a></li>
+                        <li class="me-3 icon_zoom"><a href="https://www.telegram.com" target="_blank">
+                                <img src="./assets/image/svg/nav_telegram.svg" alt="telegram">
+                            </a></li>
+                        <li class="me-3 icon_zoom"><a href="https://www.linkedin.com" target="_blank">
+                                <img src="./assets/image/svg/in_img.svg" alt="linkedine">
+                            </a></li>
+                    </div>
+                    <div class="dropdown boxBorder">
+                        <button
+                            class="border-0 bg-transparent dropdown-toggle justify-content-center align-items-center d-flex"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="./assets/image/svg/earth_icon.svg" alt="earth_icon">
+                            <p class="ms-1 mb-0 navLinks fw-normal text-white ff_Montserrat fs_sm">Eng</p>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item navLinks ff_Montserrat fw-normal fs-sm" href="#">Hindi</a>
+                            </li>
+                            <li><a class="dropdown-item navLinks ff_Montserrat fw-normal fs_sm" href="#">Urdu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
       <section class="flex-grow-1 d-flex position-relative z-3">
         <img src="./assets/image/png/header_center_arrow.png" alt="arrow" class="header_center_arrow">
         <img src="./assets/image/png/header_center_right_img.png" alt="layer" class="header_center_right_img">
         <div class="container-lg py-5 d-flex">
           <div
             class="row align-items-center justify-content-center position-relative z-1 py-lg-5 my-lg-5 justify-content-lg-between">
-            <div class="col-8 col-lg-5 text-center text-lg-start">
+            <div class="col-8 col-lg-6 text-center text-lg-start">
               <h4 class="ff_Montserrat fw-semibold fs_xmd text-white mb-1">Welcome to</h4>
-              <h3 class="ff_Montserrat fw_900 fs_xxl text-white mb-1">The Future of <span
+              <h3 class="ff_Montserrat fw_900 fs_xxl text-white mb-1 max_w_510 text-center text-lg-start">The Future of <span
                   class="text-nowrap">E-Commerce</span></h3>
               <p class="ff_Montserrat fw-medium fs_md text-white mb-lg-5 mb-md-4 mb-3">A multi-purpose token to improve
                 digital sales
@@ -98,7 +105,7 @@
             </div>
             <div class="col-8 col-lg-6 pt-lg-0 pt-5" data-aos="zoom-in">
               <img src="./assets/image/png/header_img.png" alt="header_img"
-                class="header_img position-relative z-3 w-100 max_w_672 ms-lg-5">
+                class="header_img position-relative z-3 w-100 max_w_672 ms-lg-5 mt-lg-5 pt-lg-5">
             </div>
           </div>
       </section>
@@ -110,7 +117,7 @@
       <img src="./assets/image/png/header_orange_right_layer.png" alt="layer" class="header_orange_right_layer">
     </section>
     <!-- -----------our-project--------------------->
-    <section class="posotion-relative py-lg-5 py-md-4 py-0 mt-5">
+    <section class="posotion-relative py-xl-0 py-lg-5 py-md-4 py-sm-3 mt-xl-0 my-5">
       <img src="./assets/image/png/project_right-img.png" alt="project_right-img" class="project_right_img">
       <div class="container-lg mt-lg-0 mt-5 pt-lg-0 pt-5">
         <div class="row align-items-center justify-content-center">
@@ -128,9 +135,9 @@
           </div>
           <div class="col-lg-6 col-sm-8 pt-lg-0 pt-5 mt-lg-0 mt-5" data-aos="fade-left" data-aos-easing="ease-in-sine">
             <h4
-              class="ff_Montserrat fw-bold fs_xl text-black mb-3 pt-lg-0 pt-md-5 pt-3 text-center text-lg-start mt-lg-0 mt-4">
+              class="ff_Montserrat fw-bold fs_xl text-black mb-3 pt-lg-0 pt-md-4 pt-3 text-center text-lg-start mt-lg-0 mt-5">
               Our Project</h4>
-            <p class="ff_Montserrat fw-normal fs_md dark_grey">Wuaocoin is the first project in the TechFi category that
+            <p class="ff_Montserrat fw-normal fs_md dark_grey mb-0">Wuaocoin is the first project in the TechFi category that
               allows users multiple options to have utility and usability in the ecosystem, its time to change the way
               of
               seeing the purchases and sales of products and services within an multilateral electronic commerce
@@ -141,8 +148,8 @@
       </div>
     </section>
     <!-- ---------------benefit----------- -->
-    <section class="py-lg-5 py-md-4 py-3 my-lg-5 my-0">
-      <div class="container position-relative pt-lg-5 ">
+    <section class="py-lg-5 py-md-4 py-0 my-lg-5 my-0">
+      <div class="container position-relative pt-lg-5 mt-2 ">
         <div data-aos="zoom-in">
           <h3 class="ff_Montserrat fw-bold fs_xl text-black text-center mb-5">Benefits</h3>
         </div>
@@ -188,7 +195,7 @@
     <!-- -------------whitepaper--------------- -->
     <section class="whitepaper_bg py-5">
       <div class="container-fluid">
-        <div class="d-flex flex-md-row flex-column">
+        <div class="d-flex flex-md-row flex-column justify-content-lg-center">
           <div class="d-flex px-md-4 flex-column flex-md-row" data-aos="fade-right">
             <img src="./assets/image/png/whitepaper_left_image.png" alt="whitepaper_left_image"
               class="w-100 white_left_img">
