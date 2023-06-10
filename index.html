@@ -33,7 +33,7 @@
             <a href="" class="z-1">
               <img src="./assets/image/png/web_logo.png" alt="web_logo" class="w_180">
             </a>
-            <label for="menuIcon">
+            <label for="menuIcon" onclick="showNav()">
               <span></span>
               <span></span>
               <span></span>
@@ -475,6 +475,11 @@
       once: true,
     }
     );
+  </script>
+  <script>
+    function showNav(){
+      document.body.classList.toggle('overflow-hidden')
+    }
   </script>
 </body>
 
